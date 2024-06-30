@@ -1,0 +1,175 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Slideshow from "../components/Slideshow.astro";
+
+import { Image } from "astro:assets";
+import Sidewalk from "../images/stone-path-way-garden.jpg";
+import Brick from "../images/beautiful-city-park.jpg";
+import Vinyl from "../images/texture-white-boards.jpg";
+import Deck from "../images/empty-wood-chair.jpg";
+
+import Facebook from "../images/Facebook.png";
+import Messenger from "../images/Messenger.png";
+import Email from "../images/Email.png";
+import Call from "../images/Call.png";
+---
+
+<Layout title="Dream of Clean">
+	<main>
+		<h1 id="header">Dream of Clean</h1>
+
+
+		<div class="services">
+			<p>
+				Presssure washing and cleaning services in Morganton, NC and
+				serving surrounding areas.
+			</p>
+			<h2>Services</h2>
+			<div class="container services-grid">
+				<div class="row">
+					<div class="col col-img-left">
+						<Image
+							src={Sidewalk}
+							class="col-img"
+							alt="Freshly cleaned sidewalk walkway."
+						/>
+					</div>
+					<div class="col col-head-right">
+						<h2 class="col-head-right">Sidewalks</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-head-left">
+						<h2 class="col-head-left">Bricks</h2>
+					</div>
+					<div class="col col-img-right">
+						
+						<Image
+							src={Brick}
+							class="col-img"
+							alt="Freshly cleaned brick walkway."
+						/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-img-left">
+						<Image
+							src={Vinyl}
+							class="col-img"
+							alt="Freshly cleaned vinyl siding."
+						/>
+					</div>
+					<div class="col col-head-right">
+						<h2 class="col-head-right">Vinyl</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-head-left">
+						<h2 class="col-head-left">Decks</h2>
+					</div>
+					<div class="col col-img-right">
+						
+						<Image
+							src={Deck}
+							class="col-img"
+							alt="Freshly cleaned back deck."
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="benefits">
+			<h2>Pressure washing can have many benefits</h2>
+			<h3>Cleaning</h3>
+			Pressure washing can be faster, more thorough, and less labor-intensive
+			than traditional cleaning methods. It can also be more effective at removing
+			mold than scrubbing with cleaning solutions. Pressure washing uses water
+			and a small amount of cleaning solution, making it safer and more environmentally
+			friendly than traditional methods that use harsh chemicals and detergents.
+			<h3>Curb Appeal</h3>
+			Pressure washing can make your home look brighter, cleaner, and more
+			inviting, which can improve its curb appeal.
+			<h3>Property Value</h3>
+			Pressure washing your home regularly can increase its value, especially
+			if you're planning on selling it soon.
+			<h3>Damage Prevention</h3>
+			Pressure washing can remove buildup that can damage the exterior of a
+			building or home.
+			<h3>Renovation Preparation</h3>
+			Pressure washing can prepare surfaces for renovation.
+			<h3>Cost savings</h3>
+			Pressure washing can be cheaper than replacing items, and ongoing maintenance
+			is usually cheaper than trying to fix things along the way.
+		</div>
+
+
+		<div class="slideshow">
+			<Slideshow />
+		</div>
+
+
+		<div class="testimonials">
+			<h2>Testimonials</h1>
+			<div class="elfsight-app-7289bab5-0c9b-48a9-8958-a2d81aeb7aee" data-elfsight-app-lazy></div>
+		</div>
+
+
+		<div class="contact">
+			<h2>Contact</h2>
+			<a href="https://www.facebook.com/profile.php?id=61556722781842"><Image src={Facebook} alt="Facebook icon." /></a>
+			<a href="mailto:mydreamofclean@gmail.com" alt="Email Dream of Clean today for a free quote!"><Image src={Email} alt="Email icon for contact." /></a>
+			<a href="tel:8282385592"><Image src={Call} alt="Call icon for contact." /></a>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		width: 100%;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+
+	.benefits {
+		padding: 5%;
+		font-family: "Saira Semi Condensed", sans-serif;
+	}
+
+	.services-grid {
+		padding-top: 5%;
+	}
+
+	.col-img {
+		width: 100%;
+		height: 75%;
+		object-fit: cover;
+	}
+
+	.col-img-left {
+		width: 100%;
+		height: 75%;
+		text-align: right;
+	}
+
+	.col-head-right {
+		font-family: "Arizonia", cursive;
+		font-size: 50px;
+		text-align: center;
+		padding-top: 8%;
+	}
+
+	.col-img-right {
+		width: 100%;
+		height: 75%;
+		text-align: left;
+	}
+
+	.col-head-left {
+		font-family: "Arizonia", cursive;
+		font-size: 50px;
+		text-align: center;
+		padding-top: 8%;
+	}
+</style>

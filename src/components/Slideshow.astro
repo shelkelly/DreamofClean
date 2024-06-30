@@ -1,0 +1,37 @@
+---
+
+import { Image } from "astro:assets";
+
+import FrontSteps from "../images/FrontSteps.png";
+import PrivacyFence from "../images/PrivacyFence.png";
+import Stucco from "../images/Stucco.png";
+import Stucco2 from "../images/Stucco2.png";
+---
+
+<div class="images">
+    <div class="image1">
+        <h2>Privacy Fence</h2>
+        <Image src={PrivacyFence} alt="Privacy Fence before and after cleaning." />
+    </div>
+    <div class="image2">
+        <h2>Front Steps</h2>
+        <Image src={FrontSteps} alt="Front steps before and after cleaning." />
+    </div>
+    <div class="image3">
+        <h2>Stucco</h2>
+        <Image src={Stucco} alt="Stucco before and after cleaning" />
+    </div>
+    <div class="image4">
+        <h2>Stucco</h2>
+        <Image src={Stucco2} alt="More stucco before and after cleaning" />
+    </div>
+</div>
+
+<style>
+img {
+    max-width: 100%;
+}
+</style>
+
+
+
